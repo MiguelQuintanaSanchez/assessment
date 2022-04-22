@@ -1,0 +1,25 @@
+<button mat-raised-button style="margin-left:.5%" (click)="generar()" >Actualizar tabla</button>
+<table id="tabla" (mousemove)="actualizar()" (mouseleave)="actualizar()">
+    <tr>
+        <th>Folio</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Fecha de nacimiento</th>
+        <th>Telefono</th>
+        <th>Email</th>
+        <th>Calle</th>
+        <th>Numero</th>
+        <th>Colonia</th>
+        <th>Ciudad</th>
+        <th>Codigo Postal</th>
+        <th>Registro</th>
+        <th>Selecionar</th>
+    </tr>
+</table>
+<button mat-raised-button (click)="borrar();generar();">Borrar</button>
+<div id="paginas"></div>
+<style>
+    .celda{
+        border:solid 1px #3f51b5;
+    }
+</style>
